@@ -1,4 +1,4 @@
-import AIDemo from './AIDemo'
+import DeviceMockup from './DeviceMockup'
 
 interface ConversionHeroProps {
   onCTA: () => void
@@ -45,10 +45,10 @@ export default function ConversionHero({ onCTA }: ConversionHeroProps) {
         </div>
       </div>
 
-      {/* AI Demo section */}
+      {/* Device Mockup section */}
       <div className="py-4xl md:py-5xl bg-bg-light">
         <div className="max-w-6xl mx-auto px-lg">
-          <AIDemo />
+          <DeviceMockup />
         </div>
       </div>
     </section>
