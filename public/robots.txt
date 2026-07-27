@@ -1,0 +1,25 @@
+# MegaWebCreations robots.txt
+
+# Allow all bots to crawl the entire site
+User-agent: *
+Allow: /
+
+# Disallow private/internal pages
+Disallow: /admin/
+Disallow: /api/
+
+# Specify sitemap location
+Sitemap: https://megawebcreations.vercel.app/sitemap.xml
+
+# Crawl delay (optional - 0 means no delay)
+Crawl-delay: 0
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

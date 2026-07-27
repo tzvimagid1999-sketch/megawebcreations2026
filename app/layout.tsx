@@ -2,13 +2,42 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'MegaWebCreations | Web Design, AI Automation & SEO',
-  description: 'We design custom websites, build AI automations, and implement SEO strategies to help your business grow. Premium web solutions for small businesses, startups, and professionals.',
-  keywords: 'web design, AI automation, SEO, web development, lead generation',
+  title: 'Custom Websites & AI Automation for Small Business | MegaWebCreations',
+  description: 'We design conversion-focused websites, build AI automation systems, and implement SEO strategies. Help your business generate more leads, save time, and increase revenue.',
+  keywords: 'web design, custom website, AI automation, chatbots, email automation, SEO optimization, lead generation, small business marketing',
+  metadataBase: new URL('https://megawebcreations.vercel.app'),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
-    title: 'MegaWebCreations | Web Design, AI Automation & SEO',
-    description: 'We design custom websites, build AI automations, and implement SEO strategies to help your business grow.',
+    title: 'Custom Websites & AI Automation for Small Business',
+    description: 'We design conversion-focused websites, build AI automation systems, and implement SEO strategies. Help your business generate more leads, save time, and increase revenue.',
+    url: 'https://megawebcreations.vercel.app',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'MegaWebCreations - Web Design & AI Automation',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Websites & AI Automation for Small Business',
+    description: 'We design conversion-focused websites and build AI automation systems to help your business grow.',
+  },
+  alternates: {
+    canonical: 'https://megawebcreations.vercel.app',
   },
 }
 
