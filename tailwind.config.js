@@ -7,20 +7,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Core backgrounds - Professional dark gray
-        background: '#0f1419',
-        'bg-light': '#1a2332',
-        'bg-elevated': '#232f3e',
+        // Core backgrounds - Clean light mode
+        background: '#ffffff',
+        'bg-light': '#f8fafc',
+        'bg-elevated': '#f1f5f9',
 
-        // Primary accent - Professional blue (not cyan)
+        // Primary accent - Professional blue
         accent: '#2563eb',
         'accent-dark': '#1e40af',
         'accent-light': '#3b82f6',
 
-        // Secondary accent - Slate (not purple)
-        purple: '#475569',
-        'purple-dark': '#334155',
-        'purple-light': '#64748b',
+        // Secondary accent - Slate
+        purple: '#64748b',
+        'purple-dark': '#475569',
+        'purple-light': '#cbd5e1',
 
         // Semantic colors
         success: '#10b981',
@@ -29,10 +29,10 @@ module.exports = {
         info: '#2563eb',
 
         // Text colors
-        'text-primary': '#f1f5f9',
-        'text-secondary': '#cbd5e1',
+        'text-primary': '#1e293b',
+        'text-secondary': '#64748b',
         'text-tertiary': '#94a3b8',
-        'text-inverse': '#0f1419',
+        'text-inverse': '#ffffff',
       },
 
       fontFamily: {

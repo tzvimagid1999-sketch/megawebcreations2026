@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  background-color: #0f1419;
-  color: #f1f5f9;
+  background-color: #ffffff;
+  color: #1e293b;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -27,14 +27,14 @@ body {
 
 /* Typography Defaults */
 h1, h2, h3, h4, h5, h6 {
-  color: #f1f5f9;
+  color: #1e293b;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 p {
-  color: #cbd5e1;
+  color: #64748b;
 }
 
 a {
@@ -58,7 +58,7 @@ select {
 
 input::placeholder,
 textarea::placeholder {
-  color: #94a3b8;
+  color: #cbd5e1;
   opacity: 1;
 }
 
@@ -105,9 +105,9 @@ select {
   padding: 12px 12px;
   font-size: 16px; /* Prevents zoom on iOS */
   border-radius: 8px;
-  border: 1px solid rgba(37, 99, 235, 0.15);
-  background-color: #1a2332;
-  color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  color: #1e293b;
   transition: border-color 150ms ease-out;
 }
 
@@ -203,27 +203,27 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f1419;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #475569;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #94a3b8;
 }
 
 /* Selection */
 ::selection {
   background-color: #2563eb;
-  color: #f1f5f9;
+  color: #ffffff;
 }
 
 ::-moz-selection {
   background-color: #2563eb;
-  color: #f1f5f9;
+  color: #ffffff;
 }
 
 /* Component Defaults */
