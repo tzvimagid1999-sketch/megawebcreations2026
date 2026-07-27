@@ -1,4 +1,8 @@
-export default function ServicesHero() {
+interface ServicesHeroProps {
+  onCTA: () => void
+}
+
+export default function ServicesHero({ onCTA }: ServicesHeroProps) {
   return (
     <section className="pt-32 pb-4xl bg-background relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -14,7 +18,7 @@ export default function ServicesHero() {
           From custom websites to AI automation—each service is engineered for measurable business outcomes. No fluff. Just results.
         </p>
 
-        <div className="grid sm:grid-cols-3 gap-lg max-w-2xl mx-auto">
+        <div className="grid sm:grid-cols-3 gap-lg max-w-2xl mx-auto mb-2xl">
           <div>
             <div className="text-3xl font-bold text-accent mb-md">10+</div>
             <div className="text-sm text-text-tertiary">Service Types</div>
@@ -28,6 +32,13 @@ export default function ServicesHero() {
             <div className="text-sm text-text-tertiary">Avg Revenue Growth</div>
           </div>
         </div>
+
+        <button
+          onClick={onCTA}
+          className="px-xl py-lg bg-gradient-accent text-inverse font-bold rounded-lg hover:shadow-glow-lg transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
+        >
+          Find the Right Service
+        </button>
       </div>
     </section>
   )

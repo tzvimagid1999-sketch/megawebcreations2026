@@ -103,12 +103,12 @@ export default function ServicesSection({ onCTA }: ServicesSectionProps) {
                 </ul>
               </div>
 
-              {/* CTA */}
+              {/* CTA - Unified across all services */}
               <button
                 onClick={onCTA}
                 className="w-full px-lg py-md bg-accent/10 text-accent font-semibold rounded-md hover:bg-accent/20 transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
               >
-                {service.cta}
+                Learn More
               </button>
             </div>
           ))}

@@ -17,7 +17,7 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-background">
       <Header onContactClick={() => setShowContactModal(true)} />
-      <ServicesHero />
+      <ServicesHero onCTA={() => setShowContactModal(true)} />
       <WebServices />
       <SEOService />
       <AIAutomationServices />

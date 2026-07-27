@@ -1,4 +1,8 @@
-export default function WhyChooseUs() {
+interface WhyChooseUsProps {
+  onCTA: () => void
+}
+
+export default function WhyChooseUs({ onCTA }: WhyChooseUsProps) {
   const reasons = [
     {
       title: 'We Focus on Revenue, Not Activity',
@@ -42,7 +46,7 @@ export default function WhyChooseUs() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-xl">
+        <div className="grid md:grid-cols-2 gap-xl mb-3xl">
           {reasons.map((reason, idx) => (
             <div key={idx} className="flex gap-lg">
               <div className="flex-shrink-0">
@@ -56,6 +60,16 @@ export default function WhyChooseUs() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center pt-lg border-t border-accent/10">
+          <p className="text-text-secondary mb-lg">Ready to experience the difference?</p>
+          <button
+            onClick={onCTA}
+            className="px-xl py-lg bg-accent/10 text-accent font-semibold rounded-lg hover:bg-accent/20 transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
+          >
+            Let's Talk
+          </button>
         </div>
       </div>
     </section>

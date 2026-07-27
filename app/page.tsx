@@ -99,11 +99,11 @@ export default function Home() {
         <ConversionHero onCTA={() => setShowContactModal(true)} />
         <SocialProof />
         <ServicesSection onCTA={() => setShowContactModal(true)} />
-        <WhyChooseUs />
-        <ProcessSection />
+        <WhyChooseUs onCTA={() => setShowContactModal(true)} />
+        <ProcessSection onCTA={() => setShowContactModal(true)} />
         <FeaturedProjects />
-        <TestimonialsSection />
-        <FAQSection />
+        <TestimonialsSection onCTA={() => setShowContactModal(true)} />
+        <FAQSection onCTA={() => setShowContactModal(true)} />
         <FinalCTA onCTA={() => setShowContactModal(true)} />
         <Footer onContactClick={() => setShowContactModal(true)} />
         <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />

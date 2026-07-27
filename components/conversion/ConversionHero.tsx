@@ -46,16 +46,13 @@ export default function ConversionHero({ onCTA }: ConversionHeroProps) {
           </div>
         </div>
 
-        {/* CTAs - fade in with hover animations */}
-        <div className="flex flex-col sm:flex-row gap-lg justify-center mb-xl animate-fade" style={{ animationDelay: '700ms' }}>
+        {/* Single focused CTA - fade in with hover animation */}
+        <div className="animate-fade" style={{ animationDelay: '700ms' }}>
           <button
             onClick={onCTA}
             className="px-xl py-lg bg-gradient-accent text-inverse font-bold text-lg rounded-lg hover:shadow-glow-lg hover:brightness-110 active:brightness-95 transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
           >
             Book a Free Discovery Call
-          </button>
-          <button className="px-xl py-lg border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform">
-            See Our Work
           </button>
         </div>
 

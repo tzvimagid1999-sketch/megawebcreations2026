@@ -1,4 +1,8 @@
-export default function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  onCTA: () => void
+}
+
+export default function TestimonialsSection({ onCTA }: TestimonialsSectionProps) {
   const testimonials = [
     {
       quote:
@@ -44,7 +48,7 @@ export default function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-xl">
+        <div className="grid md:grid-cols-2 gap-xl mb-3xl">
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
@@ -72,6 +76,16 @@ export default function TestimonialsSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center pt-lg border-t border-accent/10">
+          <p className="text-text-secondary mb-lg">Join our success stories and start generating revenue</p>
+          <button
+            onClick={onCTA}
+            className="px-xl py-lg bg-accent/10 text-accent font-semibold rounded-lg hover:bg-accent/20 transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
+          >
+            Schedule a Consultation
+          </button>
         </div>
       </div>
     </section>

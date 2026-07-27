@@ -3,7 +3,11 @@
 import { useState } from 'react'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
-export default function FAQSection() {
+interface FAQSectionProps {
+  onCTA: () => void
+}
+
+export default function FAQSection({ onCTA }: FAQSectionProps) {
   const [expanded, setExpanded] = useState<number | null>(0)
   const { elementRef, isVisible } = useScrollAnimation()
 
@@ -90,8 +94,14 @@ export default function FAQSection() {
           <p className="text-text-secondary mb-lg">
             Still have questions? We're happy to answer them on a call.
           </p>
+          <button
+            onClick={onCTA}
+            className="px-xl py-lg bg-gradient-accent text-inverse font-bold rounded-lg hover:shadow-glow-lg transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform mb-lg"
+          >
+            Get Your Questions Answered
+          </button>
           <p className="text-sm text-text-tertiary">
-            Email us at <a href="mailto:Megwebcraetions@gmail.com" className="text-accent hover:underline">Megwebcraetions@gmail.com</a> or call 347-782-8453
+            Or email <a href="mailto:Megwebcraetions@gmail.com" className="text-accent hover:underline">Megwebcraetions@gmail.com</a>
           </p>
         </div>
       </div>

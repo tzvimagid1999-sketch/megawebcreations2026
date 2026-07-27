@@ -1,4 +1,8 @@
-export default function ProcessSection() {
+interface ProcessSectionProps {
+  onCTA: () => void
+}
+
+export default function ProcessSection({ onCTA }: ProcessSectionProps) {
   const steps = [
     {
       number: '01',
@@ -55,7 +59,7 @@ export default function ProcessSection() {
           </p>
         </div>
 
-        <div className="space-y-lg">
+        <div className="space-y-lg mb-3xl">
           {steps.map((step, idx) => (
             <div key={idx} className="flex gap-xl">
               {/* Timeline connector */}
@@ -86,6 +90,16 @@ export default function ProcessSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center pt-lg border-t border-accent/10">
+          <p className="text-text-secondary mb-lg">Ready to start? The first step takes just 15 minutes.</p>
+          <button
+            onClick={onCTA}
+            className="px-xl py-lg bg-gradient-accent text-inverse font-bold rounded-lg hover:shadow-glow-lg transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
+          >
+            Book Your Discovery Call
+          </button>
         </div>
       </div>
     </section>
