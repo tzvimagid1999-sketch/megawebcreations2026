@@ -6,7 +6,7 @@ const services = [
   {
     icon: '🌐',
     title: 'Custom Websites That Sell',
-    problem: 'Your current website isn't generating leads.',
+    problem: "Your current website isn't generating leads.",
     solution: 'We design conversion machines—not online brochures. Every element is optimized to turn visitors into customers.',
     outcomes: [
       '40% increase in qualified leads',

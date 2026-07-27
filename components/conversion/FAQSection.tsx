@@ -19,20 +19,20 @@ export default function FAQSection() {
       a: 'Automation projects range from $3,000-$15,000 depending on complexity. Simple chatbots start around $3,000. Full workflow automation costs more but usually pays for itself within 2-3 months in time savings.',
     },
     {
-      q: 'Do you guarantee results?',
-      a: 'We can't guarantee specific revenue numbers—every business is different. What we do guarantee is our process, our effort, and our commitment to your success. We offer performance-based pricing options because we\'re confident in our results.',
+      q: "Do you guarantee results?",
+      a: "We can't guarantee specific revenue numbers—every business is different. What we do guarantee is our process, our effort, and our commitment to your success. We offer performance-based pricing options because we're confident in our results.",
     },
     {
-      q: 'What if we\'re not happy with the work?',
-      a: 'We have a revision process built in. During development, you see progress daily and can request changes. If we launch and results aren\'t meeting expectations, we optimize at no additional cost until they do.',
+      q: "What if we're not happy with the work?",
+      a: "We have a revision process built in. During development, you see progress daily and can request changes. If we launch and results aren't meeting expectations, we optimize at no additional cost until they do.",
     },
     {
       q: 'Do you provide ongoing support?',
       a: 'Yes. Support and optimization are included in our service. We monitor your site/system monthly, make improvements based on performance data, and handle technical issues.',
     },
     {
-      q: 'How do we know this will work for our business?',
-      a: 'That\'s what the discovery call is for. We\'ll analyze your situation, show you exactly what we\'d build, and what ROI you can realistically expect. No obligation.',
+      q: "How do we know this will work for our business?",
+      a: "That's what the discovery call is for. We'll analyze your situation, show you exactly what we'd build, and what ROI you can realistically expect. No obligation.",
     },
     {
       q: 'What if we want to end our relationship?',

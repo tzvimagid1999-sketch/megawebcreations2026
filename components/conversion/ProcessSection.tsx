@@ -6,7 +6,7 @@ export default function ProcessSection() {
       duration: '15 minutes',
       description:
         'We learn about your business, challenges, revenue goals, and target customers. We ask tough questions to understand what success looks like for you.',
-      outcome: 'Clarity on what\'s holding you back and a clear roadmap',
+      outcome: "Clarity on what's holding you back and a clear roadmap",
     },
     {
       number: '02',

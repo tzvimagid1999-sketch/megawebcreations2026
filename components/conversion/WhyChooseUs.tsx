@@ -13,22 +13,22 @@ export default function WhyChooseUs() {
     {
       title: 'We Invest in Your Success',
       description:
-        'We offer performance-based pricing options. If you don't see results, we adjust strategy at no additional cost.',
+        "We offer performance-based pricing options. If you don't see results, we adjust strategy at no additional cost.",
     },
     {
       title: 'Transparent, Predictable Pricing',
       description:
-        'No surprise invoices. No hidden fees. You know exactly what you're paying for and what to expect in return.',
+        "No surprise invoices. No hidden fees. You know exactly what you're paying for and what to expect in return.",
     },
     {
       title: 'Ongoing Support Included',
       description:
-        'We don't hand you a website and disappear. We actively optimize and support your digital assets so they keep generating revenue.',
+        "We don't hand you a website and disappear. We actively optimize and support your digital assets so they keep generating revenue.",
     },
     {
       title: 'Proven Track Record',
       description:
-        'Our clients see an average 40% revenue increase in year one. That's not a coincidence—it's our process.',
+        "Our clients see an average 40% revenue increase in year one. That's not a coincidence—it's our process.",
     },
   ]
 

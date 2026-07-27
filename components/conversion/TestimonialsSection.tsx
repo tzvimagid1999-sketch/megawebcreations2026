@@ -18,7 +18,7 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        'They didn't just build a website—they built a revenue machine. Every month we see more qualified leads, and the team doesn't have to spend time on tasks that were taking forever.',
+        "They didn't just build a website—they built a revenue machine. Every month we see more qualified leads, and the team doesn't have to spend time on tasks that were taking forever.",
       author: 'Lisa Rodriguez',
       title: 'Partner, Law Firm',
       metric: '156% ROI',
