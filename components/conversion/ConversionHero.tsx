@@ -27,7 +27,7 @@ export default function ConversionHero({ onCTA }: ConversionHeroProps) {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-text-secondary mb-2xl max-w-2xl mx-auto leading-relaxed">
-          Stop spending time on tasks that could be automated. Stop building websites that don't sell. We design conversion machines and automation systems that turn your leads into customers.
+          Stop wasting time on manual tasks. Stop building websites that don't sell. We design websites built to convert and AI systems that handle your repetitive work—so you can focus on growing.
         </p>
 
         {/* Social proof stats */}
