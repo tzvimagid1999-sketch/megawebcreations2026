@@ -18,7 +18,7 @@ export default function Header({ onContactClick }: HeaderProps) {
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-gray-300 hover:text-accent transition">Services</a>
+          <a href="/services" className="text-gray-300 hover:text-accent transition">Services</a>
           <a href="#why-us" className="text-gray-300 hover:text-accent transition">Why Us</a>
           <a href="#how-it-works" className="text-gray-300 hover:text-accent transition">How It Works</a>
           <a href="#results" className="text-gray-300 hover:text-accent transition">Results</a>
@@ -44,7 +44,7 @@ export default function Header({ onContactClick }: HeaderProps) {
       {isMenuOpen && (
         <div className="md:hidden bg-dark-lighter border-t border-accent/10">
           <nav className="flex flex-col gap-4 p-4">
-            <a href="#services" className="text-gray-300 hover:text-accent transition">Services</a>
+            <a href="/services" className="text-gray-300 hover:text-accent transition">Services</a>
             <a href="#why-us" className="text-gray-300 hover:text-accent transition">Why Us</a>
             <a href="#how-it-works" className="text-gray-300 hover:text-accent transition">How It Works</a>
             <a href="#results" className="text-gray-300 hover:text-accent transition">Results</a>
