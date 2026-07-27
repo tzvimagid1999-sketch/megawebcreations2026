@@ -17,17 +17,16 @@ export default function ConversionHero({ onCTA }: ConversionHeroProps) {
           <span className="text-sm font-semibold text-accent">Trusted by 150+ Businesses</span>
         </div>
 
-        {/* Main headline - slide up - Websites + AI as complete solution */}
+        {/* Main headline - slide up - AI as primary */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-lg leading-tight animate-slide-up" style={{ animationDelay: '200ms' }}>
-          Websites That Grow Your Business.{' '}
           <span className="bg-gradient-accent bg-clip-text text-transparent">
-            AI That Runs It.
+            AI That Grows Your Business.
           </span>
         </h1>
 
-        {/* Subheadline - fade in - Complete integrated solution */}
+        {/* Subheadline - fade in - AI automation primary, websites/SEO supporting */}
         <p className="text-lg md:text-xl text-text-secondary mb-2xl max-w-2xl mx-auto leading-relaxed animate-fade" style={{ animationDelay: '300ms' }}>
-          We design high-performing websites and build AI automations that help businesses capture more leads, save time, and deliver a better customer experience. Complete solutions in 4-6 weeks.
+          We build intelligent automations that save time, generate leads, improve customer experiences, and help businesses scale—with SEO and high-performing websites supporting your growth.
         </p>
 
         {/* Social proof stats - staggered animation */}

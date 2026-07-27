@@ -8,34 +8,34 @@ interface ServicesSectionProps {
 
 const services = [
   {
+    icon: '⚡',
+    title: 'AI Automation Systems',
+    problem: 'Your team is wasting time on repetitive tasks that could be automated.',
+    solution: 'We build AI systems that automate customer interactions, qualify leads, schedule appointments, and nurture relationships 24/7 without manual intervention. Your business runs itself.',
+    outcomes: [
+      '15+ hours saved per week per person',
+      'Automate all repetitive workflows',
+      'Instant customer responses 24/7',
+    ],
+    cta: 'Explore AI Automation',
+  },
+  {
     icon: '🌐',
     title: 'High-Performance Websites',
-    problem: "Your website isn't capturing enough leads.",
-    solution: 'We design websites optimized to convert visitors into qualified leads. Then your AI system takes over—automatically qualifying, nurturing, and converting them.',
+    problem: "You need a professional online presence to capture leads for your AI systems.",
+    solution: 'We design conversion-optimized websites that feed leads into your automation. Beautiful, fast, and built to work seamlessly with your AI systems.',
     outcomes: [
       '40% increase in qualified leads',
       '3x improvement in conversion rate',
-      'Perfect foundation for AI automation',
+      'Perfect lead source for automation',
     ],
-    cta: 'Book a Website Audit',
-  },
-  {
-    icon: '⚡',
-    title: 'AI Automation Systems',
-    problem: 'Your team is stuck handling repetitive customer tasks.',
-    solution: 'We build AI systems that automate customer interactions, qualify leads from your website, schedule appointments, and nurture relationships 24/7 without human intervention.',
-    outcomes: [
-      '15+ hours saved per week',
-      'Automate all website inquiries',
-      'Customers get instant responses 24/7',
-    ],
-    cta: 'Explore Automation',
+    cta: 'View Website Showcase',
   },
   {
     icon: '🔍',
-    title: 'SEO That Brings Customers',
-    problem: 'You\'re losing business to competitors ranking above you.',
-    solution: 'Strategic SEO that gets your business found when customers are actively searching for your services.',
+    title: 'SEO Strategy',
+    problem: 'Your business needs consistent organic traffic to fuel growth.',
+    solution: 'Strategic SEO that gets your business found by customers actively searching for your services. More leads flowing into your automation.',
     outcomes: [
       'Rank for high-intent keywords',
       '5x organic traffic increase',
@@ -54,13 +54,13 @@ export default function ServicesSection({ onCTA }: ServicesSectionProps) {
         {/* Section header */}
         <div className="text-center mb-3xl">
           <span className={`text-sm font-semibold text-accent uppercase tracking-wider transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-            Complete Business Solutions
+            Our Services
           </span>
           <h2 className={`text-4xl md:text-5xl font-bold text-text-primary mt-md mb-lg transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            Websites + AI Working Together
+            AI Automation First
           </h2>
           <p className={`text-lg text-text-secondary max-w-2xl mx-auto transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: isVisible ? '100ms' : '0ms' }}>
-            Your website captures leads. Your AI automates customer relationships. Together, they grow your business while you focus on what matters.
+            Build intelligent systems that grow your business. Websites and SEO support the automation that actually drives results.
           </p>
         </div>
 
