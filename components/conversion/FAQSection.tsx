@@ -1,9 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 export default function FAQSection() {
   const [expanded, setExpanded] = useState<number | null>(0)
+  const { elementRef, isVisible } = useScrollAnimation()
 
   const faqs = [
     {
@@ -41,11 +43,13 @@ export default function FAQSection() {
   ]
 
   return (
-    <section className="py-4xl md:py-5xl bg-bg-light">
+    <section ref={elementRef} className="py-4xl md:py-5xl bg-bg-light">
       <div className="max-w-3xl mx-auto px-lg">
         <div className="text-center mb-3xl">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">FAQ</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mt-md">
+          <span className={`text-sm font-semibold text-accent uppercase tracking-wider transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+            FAQ
+          </span>
+          <h2 className={`text-4xl md:text-5xl font-bold text-text-primary mt-md transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             Questions we hear often
           </h2>
         </div>
@@ -54,15 +58,18 @@ export default function FAQSection() {
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className="bg-background border border-accent/10 rounded-lg overflow-hidden hover:border-accent/30 transition-all duration-fast"
+              className={`bg-background border border-accent/10 rounded-lg overflow-hidden hover:border-accent/30 transition-all duration-500 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+              style={{ transitionDelay: isVisible ? `${idx * 50}ms` : '0ms' }}
             >
               <button
                 onClick={() => setExpanded(expanded === idx ? null : idx)}
-                className="w-full px-xl py-lg flex items-center justify-between hover:bg-bg-elevated transition-colors duration-fast"
+                className="w-full px-xl py-lg flex items-center justify-between hover:bg-bg-elevated transition-colors duration-base"
               >
                 <span className="text-left font-semibold text-text-primary text-lg">{faq.q}</span>
                 <span
-                  className={`text-accent text-2xl flex-shrink-0 ml-lg transition-transform duration-fast ${
+                  className={`text-accent text-2xl flex-shrink-0 ml-lg transition-transform duration-base ${
                     expanded === idx ? 'rotate-45' : ''
                   }`}
                 >
@@ -71,7 +78,7 @@ export default function FAQSection() {
               </button>
 
               {expanded === idx && (
-                <div className="px-xl py-lg border-t border-accent/10 bg-bg-light">
+                <div className="px-xl py-lg border-t border-accent/10 bg-bg-light animate-slide-down">
                   <p className="text-text-secondary leading-relaxed">{faq.a}</p>
                 </div>
               )}

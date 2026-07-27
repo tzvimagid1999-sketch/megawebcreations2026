@@ -148,12 +148,18 @@ module.exports = {
       },
 
       animation: {
-        fade: 'fade 200ms ease-out',
-        'slide-up': 'slideUp 200ms ease-out',
-        'slide-down': 'slideDown 200ms ease-out',
-        scale: 'scale 200ms ease-out',
+        fade: 'fade 400ms ease-out forwards',
+        'slide-up': 'slideUp 400ms ease-out forwards',
+        'slide-down': 'slideDown 400ms ease-out forwards',
+        'slide-right': 'slideRight 400ms ease-out forwards',
+        scale: 'scaleIn 400ms ease-out forwards',
+        'scale-hover': 'scaleHover 300ms ease-out forwards',
         pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         glow: 'glow 2s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'float-delayed': 'float 6s ease-in-out infinite 1s',
+        'bounce-subtle': 'bounceSubtle 3s ease-in-out infinite',
+        'spin-slow': 'spin 20s linear infinite',
       },
 
       keyframes: {
@@ -164,7 +170,7 @@ module.exports = {
         slideUp: {
           from: {
             opacity: '0',
-            transform: 'translateY(10px)',
+            transform: 'translateY(20px)',
           },
           to: {
             opacity: '1',
@@ -174,14 +180,24 @@ module.exports = {
         slideDown: {
           from: {
             opacity: '0',
-            transform: 'translateY(-10px)',
+            transform: 'translateY(-20px)',
           },
           to: {
             opacity: '1',
             transform: 'translateY(0)',
           },
         },
-        scale: {
+        slideRight: {
+          from: {
+            opacity: '0',
+            transform: 'translateX(-20px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
+        scaleIn: {
           from: {
             opacity: '0',
             transform: 'scale(0.95)',
@@ -191,6 +207,11 @@ module.exports = {
             transform: 'scale(1)',
           },
         },
+        scaleHover: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.02)' },
+          '100%': { transform: 'scale(1)' },
+        },
         glow: {
           '0%, 100%': {
             boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)',
@@ -198,6 +219,15 @@ module.exports = {
           '50%': {
             boxShadow: '0 0 40px rgba(0, 217, 255, 0.5)',
           },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        bounceSubtle: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '25%': { transform: 'translateY(-2px)' },
+          '75%': { transform: 'translateY(2px)' },
         },
       },
 

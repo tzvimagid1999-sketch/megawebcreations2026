@@ -1,3 +1,7 @@
+'use client'
+
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+
 interface ServicesSectionProps {
   onCTA: () => void
 }
@@ -42,16 +46,20 @@ const services = [
 ]
 
 export default function ServicesSection({ onCTA }: ServicesSectionProps) {
+  const { elementRef, isVisible } = useScrollAnimation()
+
   return (
-    <section className="py-4xl md:py-5xl bg-background">
+    <section ref={elementRef} className="py-4xl md:py-5xl bg-background">
       <div className="max-w-5xl mx-auto px-lg">
         {/* Section header */}
         <div className="text-center mb-3xl">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Services</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mt-md mb-lg">
+          <span className={`text-sm font-semibold text-accent uppercase tracking-wider transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+            Our Services
+          </span>
+          <h2 className={`text-4xl md:text-5xl font-bold text-text-primary mt-md mb-lg transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             Solutions that solve real business problems
           </h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          <p className={`text-lg text-text-secondary max-w-2xl mx-auto transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: isVisible ? '100ms' : '0ms' }}>
             We don't offer generic services. Each solution is built around your specific challenges and revenue goals.
           </p>
         </div>
@@ -61,7 +69,8 @@ export default function ServicesSection({ onCTA }: ServicesSectionProps) {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-bg-light border border-accent/10 rounded-lg p-xl hover:border-accent/30 hover:shadow-lg transition-all duration-fast group"
+              className={`bg-bg-light border border-accent/10 rounded-lg p-xl hover:border-accent/30 hover:shadow-lg transition-all duration-500 group transform hover:scale-105 hover:-translate-y-2 will-change-transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+              style={{ transitionDelay: isVisible ? `${idx * 100}ms` : '0ms' }}
             >
               {/* Icon */}
               <div className="text-4xl mb-lg">{service.icon}</div>
@@ -97,7 +106,7 @@ export default function ServicesSection({ onCTA }: ServicesSectionProps) {
               {/* CTA */}
               <button
                 onClick={onCTA}
-                className="w-full px-lg py-md bg-accent/10 text-accent font-semibold rounded-md hover:bg-accent/20 transition-all duration-fast group-hover:translate-y-[-2px]"
+                className="w-full px-lg py-md bg-accent/10 text-accent font-semibold rounded-md hover:bg-accent/20 transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
               >
                 {service.cta}
               </button>
@@ -106,11 +115,11 @@ export default function ServicesSection({ onCTA }: ServicesSectionProps) {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center">
+        <div className={`text-center transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: isVisible ? '300ms' : '0ms' }}>
           <p className="text-text-secondary mb-lg">Not sure which service you need?</p>
           <button
             onClick={onCTA}
-            className="px-xl py-lg bg-gradient-accent text-inverse font-bold rounded-lg hover:shadow-glow-lg transition-all duration-fast"
+            className="px-xl py-lg bg-gradient-accent text-inverse font-bold rounded-lg hover:shadow-glow-lg transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
           >
             Schedule a Free Consultation
           </button>
