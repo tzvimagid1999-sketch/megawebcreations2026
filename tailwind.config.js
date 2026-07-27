@@ -7,32 +7,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Core backgrounds
-        background: '#0a0e27',
-        'bg-light': '#1a1f3a',
-        'bg-elevated': '#242d47',
+        // Core backgrounds - Professional dark gray
+        background: '#0f1419',
+        'bg-light': '#1a2332',
+        'bg-elevated': '#232f3e',
 
-        // Primary accent (Cyan)
-        accent: '#00d9ff',
-        'accent-dark': '#0099cc',
-        'accent-light': '#66e6ff',
+        // Primary accent - Professional blue (not cyan)
+        accent: '#2563eb',
+        'accent-dark': '#1e40af',
+        'accent-light': '#3b82f6',
 
-        // Secondary accent (Purple)
-        purple: '#7c3aed',
-        'purple-dark': '#6d28d9',
-        'purple-light': '#c4b5fd',
+        // Secondary accent - Slate (not purple)
+        purple: '#475569',
+        'purple-dark': '#334155',
+        'purple-light': '#64748b',
 
         // Semantic colors
         success: '#10b981',
         warning: '#f59e0b',
         error: '#ef4444',
-        info: '#3b82f6',
+        info: '#2563eb',
 
         // Text colors
-        'text-primary': '#e5e7eb',
-        'text-secondary': '#9ca3af',
-        'text-tertiary': '#6b7280',
-        'text-inverse': '#0a0e27',
+        'text-primary': '#f1f5f9',
+        'text-secondary': '#cbd5e1',
+        'text-tertiary': '#94a3b8',
+        'text-inverse': '#0f1419',
       },
 
       fontFamily: {
@@ -112,19 +112,19 @@ module.exports = {
         xl: '0 20px 25px rgba(0, 0, 0, 0.2)',
         '2xl': '0 25px 50px rgba(0, 0, 0, 0.25)',
 
-        // Accent glow effects
-        'glow-sm': '0 0 8px rgba(0, 217, 255, 0.3)',
-        'glow-md': '0 0 20px rgba(0, 217, 255, 0.3)',
-        'glow-lg': '0 0 40px rgba(0, 217, 255, 0.4)',
-        'glow-purple': '0 0 20px rgba(124, 58, 237, 0.2)',
+        // Subtle accent shadows (not glows)
+        'glow-sm': '0 4px 12px rgba(37, 99, 235, 0.1)',
+        'glow-md': '0 8px 24px rgba(37, 99, 235, 0.12)',
+        'glow-lg': '0 12px 32px rgba(37, 99, 235, 0.15)',
+        'glow-purple': '0 4px 12px rgba(71, 85, 105, 0.1)',
 
         // Focus states
-        focus: '0 0 0 2px #0a0e27, 0 0 0 4px #00d9ff',
+        focus: '0 0 0 2px #0f1419, 0 0 0 4px #2563eb',
       },
 
       backgroundImage: {
-        'gradient-accent': 'linear-gradient(135deg, #00d9ff 0%, #7c3aed 100%)',
-        'gradient-subtle': 'linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(124, 58, 237, 0.05))',
+        'gradient-accent': 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)',
+        'gradient-subtle': 'linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(30, 64, 175, 0.03))',
       },
 
       borderColor: {
@@ -214,10 +214,10 @@ module.exports = {
         },
         glow: {
           '0%, 100%': {
-            boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)',
+            boxShadow: '0 8px 20px rgba(37, 99, 235, 0.1)',
           },
           '50%': {
-            boxShadow: '0 0 40px rgba(0, 217, 255, 0.5)',
+            boxShadow: '0 12px 28px rgba(37, 99, 235, 0.15)',
           },
         },
         float: {
