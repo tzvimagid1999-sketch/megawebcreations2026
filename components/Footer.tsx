@@ -31,9 +31,9 @@ export default function Footer({ onContactClick }: FooterProps) {
           <div>
             <h4 className="font-bold text-white mb-4">Company</h4>
             <ul className="space-y-2">
-              <li><a href="#why-us" className="text-gray-400 hover:text-accent transition text-sm">About</a></li>
-              <li><a href="#how-it-works" className="text-gray-400 hover:text-accent transition text-sm">How We Work</a></li>
-              <li><a href="#results" className="text-gray-400 hover:text-accent transition text-sm">Case Studies</a></li>
+              <li><a href="/about" className="text-gray-400 hover:text-accent transition text-sm">About Us</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-accent transition text-sm">Services</a></li>
+              <li><button onClick={onContactClick} className="text-gray-400 hover:text-accent transition text-sm">Contact</button></li>
             </ul>
           </div>
 
@@ -59,8 +59,8 @@ export default function Footer({ onContactClick }: FooterProps) {
               © {currentYear} MegaWebCreations. All rights reserved.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-accent transition text-sm">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-accent transition text-sm">Terms of Service</a>
+              <a href="/privacy" className="text-gray-400 hover:text-accent transition text-sm">Privacy Policy</a>
+              <a href="mailto:Megwebcraetions@gmail.com" className="text-gray-400 hover:text-accent transition text-sm">Contact</a>
             </div>
           </div>
         </div>
