@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Script from 'next/script'
 import Header from '@/components/Header'
 import ConversionHero from '@/components/conversion/ConversionHero'
-import SocialProof from '@/components/conversion/SocialProof'
 import ServicesSection from '@/components/conversion/ServicesSection'
 import WhyChooseUs from '@/components/conversion/WhyChooseUs'
 import ProcessSection from '@/components/conversion/ProcessSection'
@@ -97,7 +96,6 @@ export default function Home() {
       <main className="min-h-screen bg-background">
         <Header onContactClick={() => setShowContactModal(true)} />
         <ConversionHero onCTA={() => setShowContactModal(true)} />
-        <SocialProof />
         <ServicesSection onCTA={() => setShowContactModal(true)} />
         <WhyChooseUs onCTA={() => setShowContactModal(true)} />
         <ProcessSection onCTA={() => setShowContactModal(true)} />
