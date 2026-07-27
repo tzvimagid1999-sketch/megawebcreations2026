@@ -1,15 +1,19 @@
+import AIDemo from './AIDemo'
+
 interface ConversionHeroProps {
   onCTA: () => void
 }
 
 export default function ConversionHero({ onCTA }: ConversionHeroProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background border-b border-accent/5">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent"></div>
-      </div>
+    <section className="relative overflow-hidden bg-background">
+      {/* Hero top section */}
+      <div className="relative min-h-screen flex items-center justify-center overflow-hidden border-b border-accent/5">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent"></div>
+        </div>
 
-      <div className="relative z-10 max-w-3xl mx-auto px-lg text-center py-20">
+        <div className="relative z-10 max-w-3xl mx-auto px-lg text-center py-20">
         {/* Main headline - clean and direct */}
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-text-primary mb-2xl leading-tight">
           <span className="text-accent">AI</span> That Grows Your Business.
@@ -37,6 +41,14 @@ export default function ConversionHero({ onCTA }: ConversionHeroProps) {
           <span>✓ 15-minute call</span>
           <span className="hidden sm:block">•</span>
           <span>✓ Trusted by 150+ businesses</span>
+        </div>
+        </div>
+      </div>
+
+      {/* AI Demo section */}
+      <div className="py-4xl md:py-5xl bg-bg-light">
+        <div className="max-w-6xl mx-auto px-lg">
+          <AIDemo />
         </div>
       </div>
     </section>
