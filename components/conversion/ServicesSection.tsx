@@ -9,24 +9,24 @@ interface ServicesSectionProps {
 const services = [
   {
     icon: '🌐',
-    title: 'Custom Websites That Sell',
-    problem: "Your current website isn't generating leads.",
-    solution: 'We design conversion machines—not online brochures. Every element is optimized to turn visitors into customers.',
+    title: 'High-Performance Websites',
+    problem: "Your website isn't capturing enough leads.",
+    solution: 'We design websites optimized to convert visitors into qualified leads. Then your AI system takes over—automatically qualifying, nurturing, and converting them.',
     outcomes: [
       '40% increase in qualified leads',
       '3x improvement in conversion rate',
-      'Built for mobile (where 60% of traffic comes from)',
+      'Perfect foundation for AI automation',
     ],
     cta: 'Book a Website Audit',
   },
   {
     icon: '⚡',
     title: 'AI Automation Systems',
-    problem: 'You\'re manually handling tasks that waste 10+ hours per week.',
-    solution: 'We implement AI systems that handle customer inquiries, scheduling, follow-ups, and data entry automatically.',
+    problem: 'Your team is stuck handling repetitive customer tasks.',
+    solution: 'We build AI systems that automate customer interactions, qualify leads from your website, schedule appointments, and nurture relationships 24/7 without human intervention.',
     outcomes: [
       '15+ hours saved per week',
-      'Zero missed follow-ups',
+      'Automate all website inquiries',
       'Customers get instant responses 24/7',
     ],
     cta: 'Explore Automation',
@@ -54,13 +54,13 @@ export default function ServicesSection({ onCTA }: ServicesSectionProps) {
         {/* Section header */}
         <div className="text-center mb-3xl">
           <span className={`text-sm font-semibold text-accent uppercase tracking-wider transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-            Our Services
+            Complete Business Solutions
           </span>
           <h2 className={`text-4xl md:text-5xl font-bold text-text-primary mt-md mb-lg transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            Solutions that solve real business problems
+            Websites + AI Working Together
           </h2>
           <p className={`text-lg text-text-secondary max-w-2xl mx-auto transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: isVisible ? '100ms' : '0ms' }}>
-            We don't offer generic services. Each solution is built around your specific challenges and revenue goals.
+            Your website captures leads. Your AI automates customer relationships. Together, they grow your business while you focus on what matters.
           </p>
         </div>
 

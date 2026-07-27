@@ -21,10 +21,10 @@ export default function AboutPage() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-lg text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-text-primary mb-lg leading-tight">
-            We're obsessed with your revenue
+            Complete Business Solutions
           </h1>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
-            Since 2020, we've helped 150+ businesses generate $2.3M in combined revenue through custom websites, AI automation, and SEO strategies that actually work.
+            Since 2020, we've helped 150+ businesses generate $2.3M in combined revenue by combining high-performing websites with AI automation systems that work together to capture leads, automate customer relationships, and scale businesses.
           </p>
         </div>
       </section>
@@ -67,18 +67,18 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-xl mb-3xl">
             <div className="bg-bg-light rounded-lg p-xl border border-accent/10">
               <div className="text-3xl font-bold text-accent mb-lg">1</div>
+              <h3 className="text-xl font-bold text-text-primary mb-md">Integrated Solutions</h3>
+              <p className="text-text-secondary">Your website captures leads. Your AI automates their journey. We build both working together as one complete system, not two separate services.</p>
+            </div>
+            <div className="bg-bg-light rounded-lg p-xl border border-accent/10">
+              <div className="text-3xl font-bold text-accent mb-lg">2</div>
               <h3 className="text-xl font-bold text-text-primary mb-md">Revenue Focus</h3>
               <p className="text-text-secondary">Every decision is filtered through one question: "Will this make our client more money?" If not, we don't do it.</p>
             </div>
             <div className="bg-bg-light rounded-lg p-xl border border-accent/10">
-              <div className="text-3xl font-bold text-accent mb-lg">2</div>
-              <h3 className="text-xl font-bold text-text-primary mb-md">Transparency</h3>
-              <p className="text-text-secondary">No surprises. No hidden fees. You know exactly what you're paying for and what we expect to deliver.</p>
-            </div>
-            <div className="bg-bg-light rounded-lg p-xl border border-accent/10">
               <div className="text-3xl font-bold text-accent mb-lg">3</div>
-              <h3 className="text-xl font-bold text-text-primary mb-md">Direct Access</h3>
-              <p className="text-text-secondary">You work directly with our senior strategists and developers. No account managers. No offshore teams.</p>
+              <h3 className="text-xl font-bold text-text-primary mb-md">Direct & Transparent</h3>
+              <p className="text-text-secondary">You work directly with our team. No account managers. No offshore contractors. Clear pricing, zero hidden fees.</p>
             </div>
           </div>
 
