@@ -71,7 +71,7 @@ button {
   color: inherit;
 }
 
-/* Focus States */
+/* Focus States - Critical for Accessibility */
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
@@ -80,6 +80,84 @@ a:focus-visible {
   outline: 2px solid #00d9ff;
   outline-offset: 2px;
   border-radius: 2px;
+}
+
+/* Mobile Touch Targets - Minimum 44x44px */
+button,
+a[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px 16px;
+}
+
+/* Form inputs - Mobile optimized */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  min-height: 44px;
+  padding: 12px 12px;
+  font-size: 16px; /* Prevents zoom on iOS */
+  border-radius: 8px;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  background-color: #1a1f3a;
+  color: #e5e7eb;
+  transition: border-color 150ms ease-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #00d9ff;
+  outline: none;
+}
+
+/* Mobile-friendly links */
+a {
+  position: relative;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+  /* For links not in button */
+  padding: 8px;
+  margin: -8px;
+}
+
+/* Checkboxes and radios - Touch friendly */
+input[type="checkbox"],
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: #00d9ff;
+}
+
+/* Image optimization for mobile */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent horizontal scroll */
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 /* Accessibility */

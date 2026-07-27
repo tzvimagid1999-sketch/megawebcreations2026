@@ -59,21 +59,22 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
         <div className="absolute bottom-20 left-10 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      <div className="relative z-10 max-w-4xl mx-auto px-lg">
+        <div className="text-center mb-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-lg">
             Ready to grow your business?
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
             Schedule a free consultation. No obligation, no pressure—just honest conversation about what you need.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-dark-lighter border border-accent/20 rounded-lg p-8 md:p-12">
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+        <form onSubmit={handleSubmit} className="bg-bg-light border border-accent/20 rounded-lg p-lg md:p-2xl">
+          {/* Single column form for mobile, 2 columns on desktop */}
+          <div className="grid md:grid-cols-2 gap-lg mb-lg">
             <div>
-              <label htmlFor="name" className="block text-white font-semibold mb-2">
-                Your Name
+              <label htmlFor="name" className="block text-text-primary font-semibold mb-md">
+                Your Name *
               </label>
               <input
                 type="text"
@@ -82,13 +83,14 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-dark border border-accent/20 rounded text-white placeholder-gray-500 focus:border-accent focus:outline-none transition"
+                className="w-full px-lg py-md bg-background border border-accent/20 rounded-lg text-text-primary placeholder-text-tertiary focus:border-accent focus:outline-none transition"
                 placeholder="John Doe"
+                aria-label="Your full name"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-white font-semibold mb-2">
-                Email Address
+              <label htmlFor="email" className="block text-text-primary font-semibold mb-md">
+                Email Address *
               </label>
               <input
                 type="email"
@@ -97,15 +99,18 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-dark border border-accent/20 rounded text-white placeholder-gray-500 focus:border-accent focus:outline-none transition"
+                inputMode="email"
+                className="w-full px-lg py-md bg-background border border-accent/20 rounded-lg text-text-primary placeholder-text-tertiary focus:border-accent focus:outline-none transition"
                 placeholder="john@example.com"
+                aria-label="Your email address"
               />
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          {/* Single column on mobile */}
+          <div className="grid md:grid-cols-2 gap-lg mb-lg">
             <div>
-              <label htmlFor="phone" className="block text-white font-semibold mb-2">
+              <label htmlFor="phone" className="block text-text-primary font-semibold mb-md">
                 Phone Number
               </label>
               <input
@@ -114,20 +119,23 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-dark border border-accent/20 rounded text-white placeholder-gray-500 focus:border-accent focus:outline-none transition"
+                inputMode="tel"
+                className="w-full px-lg py-md bg-background border border-accent/20 rounded-lg text-text-primary placeholder-text-tertiary focus:border-accent focus:outline-none transition"
                 placeholder="(555) 123-4567"
+                aria-label="Your phone number"
               />
             </div>
             <div>
-              <label htmlFor="service" className="block text-white font-semibold mb-2">
-                What do you need?
+              <label htmlFor="service" className="block text-text-primary font-semibold mb-md">
+                What do you need? *
               </label>
               <select
                 id="service"
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-dark border border-accent/20 rounded text-white focus:border-accent focus:outline-none transition"
+                className="w-full px-lg py-md bg-background border border-accent/20 rounded-lg text-text-primary focus:border-accent focus:outline-none transition"
+                aria-label="Service you are interested in"
               >
                 <option value="">Select a service</option>
                 <option value="website">Custom Website</option>
@@ -139,8 +147,9 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
             </div>
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="message" className="block text-white font-semibold mb-2">
+          {/* Full width message field */}
+          <div className="mb-lg">
+            <label htmlFor="message" className="block text-text-primary font-semibold mb-md">
               Tell us about your project
             </label>
             <textarea
@@ -149,33 +158,38 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full px-4 py-3 bg-dark border border-accent/20 rounded text-white placeholder-gray-500 focus:border-accent focus:outline-none transition resize-none"
+              className="w-full px-lg py-md bg-background border border-accent/20 rounded-lg text-text-primary placeholder-text-tertiary focus:border-accent focus:outline-none transition resize-none"
               placeholder="What's your main goal? Any specific challenges?"
+              aria-label="Tell us about your project"
             />
           </div>
 
+          {/* Success message */}
           {status === 'success' && (
-            <div className="p-4 bg-accent/10 border border-accent rounded mb-6 text-accent">
-              Thank you! We'll be in touch within 24 hours.
+            <div className="p-lg bg-success/10 border border-success rounded-lg mb-lg text-success text-sm" role="alert">
+              ✓ Thank you! We'll be in touch within 24 hours.
             </div>
           )}
 
+          {/* Error message */}
           {status === 'error' && (
-            <div className="p-4 bg-red-500/10 border border-red-500 rounded mb-6 text-red-400">
-              Something went wrong. Please try again or email us directly.
+            <div className="p-lg bg-error/10 border border-error rounded-lg mb-lg text-error text-sm" role="alert">
+              ✗ Something went wrong. Please try again or email us directly.
             </div>
           )}
 
+          {/* Submit button - Large tap target for mobile */}
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full px-8 py-4 bg-gradient-accent text-dark font-bold rounded text-lg hover:shadow-lg glow-accent transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full px-xl py-lg bg-gradient-accent text-inverse font-bold rounded-lg text-base md:text-lg hover:shadow-glow-lg transition-all duration-base disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105 active:scale-95 will-change-transform"
           >
             {isSubmitting ? 'Sending...' : 'Schedule Consultation'}
           </button>
 
-          <p className="text-center text-gray-400 text-sm mt-4">
-            Or email us: <a href="mailto:Megwebcraetions@gmail.com" className="text-accent hover:underline">Megwebcraetions@gmail.com</a>
+          {/* Alternative contact method */}
+          <p className="text-center text-text-secondary text-sm mt-lg">
+            Or email us: <a href="mailto:Megwebcraetions@gmail.com" className="text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">Megwebcraetions@gmail.com</a>
           </p>
         </form>
       </div>
