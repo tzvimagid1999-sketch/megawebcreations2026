@@ -18,8 +18,8 @@ export default function AIVisualElement() {
         <div className="mb-lg animate-fade" style={{ animationDelay: '0.2s' }}>
           <div className="bg-white/80 backdrop-blur border border-accent/20 rounded-xl p-lg shadow-lg hover:shadow-xl transition-shadow duration-base">
             <div className="flex items-center gap-md">
-              <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm">1</div>
-              <div className="flex-1">
+              <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">1</div>
+              <div className="flex-1 text-center">
                 <div className="font-semibold text-text-primary text-sm">Captures Leads</div>
                 <div className="text-xs text-text-secondary mt-xs">24/7 Lead Generation</div>
               </div>
@@ -36,8 +36,8 @@ export default function AIVisualElement() {
         <div className="mb-lg animate-fade" style={{ animationDelay: '0.4s' }}>
           <div className="bg-white/80 backdrop-blur border border-accent/20 rounded-xl p-lg shadow-lg hover:shadow-xl transition-shadow duration-base">
             <div className="flex items-center gap-md">
-              <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm">2</div>
-              <div className="flex-1">
+              <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">2</div>
+              <div className="flex-1 text-center">
                 <div className="font-semibold text-text-primary text-sm">Qualifies & Schedules</div>
                 <div className="text-xs text-text-secondary mt-xs">Instant Meetings Booked</div>
               </div>
@@ -54,8 +54,8 @@ export default function AIVisualElement() {
         <div className="animate-fade" style={{ animationDelay: '0.6s' }}>
           <div className="bg-gradient-accent rounded-xl p-lg shadow-lg">
             <div className="flex items-center gap-md">
-              <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-white font-bold text-sm">3</div>
-              <div className="flex-1">
+              <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">3</div>
+              <div className="flex-1 text-center">
                 <div className="font-semibold text-white text-sm">Your Business Grows</div>
                 <div className="text-xs text-white/80 mt-xs">More Revenue, Less Work</div>
               </div>
