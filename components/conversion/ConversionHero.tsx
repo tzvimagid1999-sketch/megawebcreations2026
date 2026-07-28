@@ -19,9 +19,9 @@ export default function ConversionHero({ onCTA }: ConversionHeroProps) {
           <span className="text-accent">AI</span> That Grows Your Business.
         </h1>
 
-        {/* Subheadline - short and punchy */}
+        {/* Subheadline */}
         <p className="text-xl md:text-2xl text-text-secondary mb-3xl max-w-2xl mx-auto leading-relaxed">
-          Intelligent automations that automate your business and generate more revenue.
+          We build intelligent automations that save time, generate leads, improve customer experiences, and help businesses scale—with SEO and high-performing websites supporting your growth.
         </p>
 
         {/* Single focused CTA */}
