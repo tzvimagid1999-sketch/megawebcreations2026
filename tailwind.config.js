@@ -7,15 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Core backgrounds - Light mode with black text
+        // Core backgrounds - Dark blue
         background: '#ffffff',
         'bg-light': '#f0fdf4',
         'bg-elevated': '#e8f9f1',
 
-        // Primary accent - Professional green
-        accent: '#059669',
-        'accent-dark': '#047857',
-        'accent-light': '#10b981',
+        // Primary accent - Modern orange
+        accent: '#f97316',
+        'accent-dark': '#ea580c',
+        'accent-light': '#fb923c',
 
         // Secondary accent - Dark gray/black
         purple: '#1f2937',
@@ -23,10 +23,10 @@ module.exports = {
         'purple-light': '#374151',
 
         // Semantic colors
-        success: '#059669',
+        success: '#f97316',
         warning: '#f59e0b',
         error: '#ef4444',
-        info: '#059669',
+        info: '#f97316',
 
         // Text colors
         'text-primary': '#1f2937',
@@ -113,18 +113,18 @@ module.exports = {
         '2xl': '0 25px 50px rgba(0, 0, 0, 0.25)',
 
         // Subtle accent shadows (not glows)
-        'glow-sm': '0 4px 12px rgba(5, 150, 105, 0.1)',
-        'glow-md': '0 8px 24px rgba(5, 150, 105, 0.12)',
-        'glow-lg': '0 12px 32px rgba(5, 150, 105, 0.15)',
+        'glow-sm': '0 4px 12px rgba(249, 115, 22, 0.1)',
+        'glow-md': '0 8px 24px rgba(249, 115, 22, 0.12)',
+        'glow-lg': '0 12px 32px rgba(249, 115, 22, 0.15)',
         'glow-purple': '0 4px 12px rgba(31, 41, 55, 0.1)',
 
         // Focus states
-        focus: '0 0 0 2px #ffffff, 0 0 0 4px #059669',
+        focus: '0 0 0 2px #ffffff, 0 0 0 4px #f97316',
       },
 
       backgroundImage: {
-        'gradient-accent': 'linear-gradient(135deg, #059669 0%, #047857 100%)',
-        'gradient-subtle': 'linear-gradient(135deg, rgba(5, 150, 105, 0.03), rgba(4, 120, 87, 0.03))',
+        'gradient-accent': 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
+        'gradient-subtle': 'linear-gradient(135deg, rgba(249, 115, 22, 0.03), rgba(234, 88, 12, 0.03))',
       },
 
       borderColor: {
@@ -214,10 +214,10 @@ module.exports = {
         },
         glow: {
           '0%, 100%': {
-            boxShadow: '0 8px 20px rgba(5, 150, 105, 0.1)',
+            boxShadow: '0 8px 20px rgba(249, 115, 22, 0.1)',
           },
           '50%': {
-            boxShadow: '0 12px 28px rgba(5, 150, 105, 0.15)',
+            boxShadow: '0 12px 28px rgba(249, 115, 22, 0.15)',
           },
         },
         float: {
