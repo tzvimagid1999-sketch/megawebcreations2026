@@ -17,26 +17,21 @@ export default function Header({ onContactClick }: HeaderProps) {
           <span className="text-xl font-bold text-text-primary">MegaWebCreations</span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="/" className="text-text-secondary hover:text-accent transition-colors duration-base relative group">
+        <nav className="hidden md:flex items-center gap-2">
+          <a href="/" className="text-text-secondary hover:text-accent bg-accent/5 hover:bg-accent/10 px-4 py-2 rounded-lg transition-all duration-base">
             Home
-            <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-1.5 bg-accent rounded-full group-hover:w-12 transition-all duration-base"></span>
           </a>
-          <a href="/services" className="text-text-secondary hover:text-accent transition-colors duration-base relative group">
+          <a href="/services" className="text-text-secondary hover:text-accent bg-accent/5 hover:bg-accent/10 px-4 py-2 rounded-lg transition-all duration-base">
             Services
-            <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-1.5 bg-accent rounded-full group-hover:w-12 transition-all duration-base"></span>
           </a>
-          <a href="#why-us" className="text-text-secondary hover:text-accent transition-colors duration-base relative group">
+          <a href="#why-us" className="text-text-secondary hover:text-accent bg-accent/5 hover:bg-accent/10 px-4 py-2 rounded-lg transition-all duration-base">
             Why Us
-            <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-1.5 bg-accent rounded-full group-hover:w-12 transition-all duration-base"></span>
           </a>
-          <a href="#how-it-works" className="text-text-secondary hover:text-accent transition-colors duration-base relative group">
+          <a href="#how-it-works" className="text-text-secondary hover:text-accent bg-accent/5 hover:bg-accent/10 px-4 py-2 rounded-lg transition-all duration-base">
             How It Works
-            <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-1.5 bg-accent rounded-full group-hover:w-12 transition-all duration-base"></span>
           </a>
-          <a href="#results" className="text-text-secondary hover:text-accent transition-colors duration-base relative group">
+          <a href="#results" className="text-text-secondary hover:text-accent bg-accent/5 hover:bg-accent/10 px-4 py-2 rounded-lg transition-all duration-base">
             Results
-            <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-1.5 bg-accent rounded-full group-hover:w-12 transition-all duration-base"></span>
           </a>
           <button
             onClick={onContactClick}
