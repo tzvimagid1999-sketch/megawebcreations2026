@@ -85,9 +85,7 @@ export default function ConversionHeroNew({ onCTA }: ConversionHeroProps) {
 
             {/* Right side - AI Visual */}
             <div className="animate-slide-in-right" style={{ animationDelay: '0.3s' }}>
-              <div className="bg-white/50 backdrop-blur border border-accent/20 rounded-2xl p-2xl">
-                <AIVisualElement />
-              </div>
+              <AIVisualElement />
             </div>
           </div>
         </div>
