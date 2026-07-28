@@ -6,7 +6,7 @@ import Header from '@/components/Header'
 import ConversionHeroNew from '@/components/conversion/ConversionHeroNew'
 import ServicesSection from '@/components/conversion/ServicesSection'
 import WhyChooseUs from '@/components/conversion/WhyChooseUs'
-import ProcessSection from '@/components/conversion/ProcessSection'
+import PremiumProcessSection from '@/components/conversion/PremiumProcessSection'
 import FeaturedProjects from '@/components/conversion/FeaturedProjects'
 import TestimonialsSection from '@/components/conversion/TestimonialsSection'
 import FAQSection from '@/components/conversion/FAQSection'
@@ -98,7 +98,7 @@ export default function Home() {
         <ConversionHeroNew onCTA={() => setShowContactModal(true)} />
         <ServicesSection onCTA={() => setShowContactModal(true)} />
         <WhyChooseUs onCTA={() => setShowContactModal(true)} />
-        <ProcessSection onCTA={() => setShowContactModal(true)} />
+        <PremiumProcessSection onCTA={() => setShowContactModal(true)} />
         <FeaturedProjects />
         <TestimonialsSection onCTA={() => setShowContactModal(true)} />
         <FAQSection onCTA={() => setShowContactModal(true)} />
