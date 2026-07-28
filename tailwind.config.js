@@ -7,31 +7,31 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Core backgrounds - Clean light mode
+        // Core backgrounds - Light mode with black text
         background: '#ffffff',
-        'bg-light': '#f8fafc',
-        'bg-elevated': '#f1f5f9',
+        'bg-light': '#f0fdf4',
+        'bg-elevated': '#e8f9f1',
 
-        // Primary accent - Professional blue
-        accent: '#2563eb',
-        'accent-dark': '#1e40af',
-        'accent-light': '#3b82f6',
+        // Primary accent - Professional green
+        accent: '#059669',
+        'accent-dark': '#047857',
+        'accent-light': '#10b981',
 
-        // Secondary accent - Slate
-        purple: '#64748b',
-        'purple-dark': '#475569',
-        'purple-light': '#cbd5e1',
+        // Secondary accent - Dark gray/black
+        purple: '#1f2937',
+        'purple-dark': '#111827',
+        'purple-light': '#374151',
 
         // Semantic colors
-        success: '#10b981',
+        success: '#059669',
         warning: '#f59e0b',
         error: '#ef4444',
-        info: '#2563eb',
+        info: '#059669',
 
         // Text colors
-        'text-primary': '#1e293b',
-        'text-secondary': '#64748b',
-        'text-tertiary': '#94a3b8',
+        'text-primary': '#1f2937',
+        'text-secondary': '#4b5563',
+        'text-tertiary': '#6b7280',
         'text-inverse': '#ffffff',
       },
 
@@ -113,18 +113,18 @@ module.exports = {
         '2xl': '0 25px 50px rgba(0, 0, 0, 0.25)',
 
         // Subtle accent shadows (not glows)
-        'glow-sm': '0 4px 12px rgba(37, 99, 235, 0.1)',
-        'glow-md': '0 8px 24px rgba(37, 99, 235, 0.12)',
-        'glow-lg': '0 12px 32px rgba(37, 99, 235, 0.15)',
-        'glow-purple': '0 4px 12px rgba(71, 85, 105, 0.1)',
+        'glow-sm': '0 4px 12px rgba(5, 150, 105, 0.1)',
+        'glow-md': '0 8px 24px rgba(5, 150, 105, 0.12)',
+        'glow-lg': '0 12px 32px rgba(5, 150, 105, 0.15)',
+        'glow-purple': '0 4px 12px rgba(31, 41, 55, 0.1)',
 
         // Focus states
-        focus: '0 0 0 2px #0f1419, 0 0 0 4px #2563eb',
+        focus: '0 0 0 2px #ffffff, 0 0 0 4px #059669',
       },
 
       backgroundImage: {
-        'gradient-accent': 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)',
-        'gradient-subtle': 'linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(30, 64, 175, 0.03))',
+        'gradient-accent': 'linear-gradient(135deg, #059669 0%, #047857 100%)',
+        'gradient-subtle': 'linear-gradient(135deg, rgba(5, 150, 105, 0.03), rgba(4, 120, 87, 0.03))',
       },
 
       borderColor: {
@@ -214,10 +214,10 @@ module.exports = {
         },
         glow: {
           '0%, 100%': {
-            boxShadow: '0 8px 20px rgba(37, 99, 235, 0.1)',
+            boxShadow: '0 8px 20px rgba(5, 150, 105, 0.1)',
           },
           '50%': {
-            boxShadow: '0 12px 28px rgba(37, 99, 235, 0.15)',
+            boxShadow: '0 12px 28px rgba(5, 150, 105, 0.15)',
           },
         },
         float: {
