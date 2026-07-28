@@ -8,7 +8,7 @@ interface ConversionHeroProps {
 
 export default function ConversionHeroNew({ onCTA }: ConversionHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-background">
+    <section className="relative overflow-hidden bg-slate-900">
       {/* Animated gradient background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>

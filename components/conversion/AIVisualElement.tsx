@@ -16,7 +16,7 @@ export default function AIVisualElement() {
       <div className="relative z-10 w-full px-lg">
         {/* Top card - Lead Capture */}
         <div className="mb-lg animate-fade" style={{ animationDelay: '0.2s' }}>
-          <div className="bg-blue-50 backdrop-blur border border-blue-200 rounded-xl p-lg shadow-lg hover:shadow-xl transition-shadow duration-base">
+          <div className="bg-white/95 backdrop-blur border border-white/20 rounded-xl p-lg shadow-lg hover:shadow-xl transition-shadow duration-base">
             <div className="flex items-center gap-md">
               <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">1</div>
               <div className="flex-1 text-center">
@@ -34,7 +34,7 @@ export default function AIVisualElement() {
 
         {/* Middle card - Qualification */}
         <div className="mb-lg animate-fade" style={{ animationDelay: '0.4s' }}>
-          <div className="bg-blue-50 backdrop-blur border border-blue-200 rounded-xl p-lg shadow-lg hover:shadow-xl transition-shadow duration-base">
+          <div className="bg-white/95 backdrop-blur border border-white/20 rounded-xl p-lg shadow-lg hover:shadow-xl transition-shadow duration-base">
             <div className="flex items-center gap-md">
               <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">2</div>
               <div className="flex-1 text-center">
