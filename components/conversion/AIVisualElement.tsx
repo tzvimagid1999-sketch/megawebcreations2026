@@ -20,10 +20,9 @@ export default function AIVisualElement() {
             <div className="flex items-center gap-md">
               <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm">1</div>
               <div className="flex-1">
-                <div className="font-semibold text-text-primary text-sm">AI Captures Leads</div>
+                <div className="font-semibold text-text-primary text-sm">Captures Leads</div>
                 <div className="text-xs text-text-secondary mt-xs">24/7 Lead Generation</div>
               </div>
-              <div className="text-2xl">🎯</div>
             </div>
           </div>
         </div>
@@ -39,10 +38,9 @@ export default function AIVisualElement() {
             <div className="flex items-center gap-md">
               <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center text-white font-bold text-sm">2</div>
               <div className="flex-1">
-                <div className="font-semibold text-text-primary text-sm">AI Qualifies & Schedules</div>
+                <div className="font-semibold text-text-primary text-sm">Qualifies & Schedules</div>
                 <div className="text-xs text-text-secondary mt-xs">Instant Meetings Booked</div>
               </div>
-              <div className="text-2xl">⚡</div>
             </div>
           </div>
         </div>
@@ -61,7 +59,6 @@ export default function AIVisualElement() {
                 <div className="font-semibold text-white text-sm">Your Business Grows</div>
                 <div className="text-xs text-white/80 mt-xs">More Revenue, Less Work</div>
               </div>
-              <div className="text-2xl">📈</div>
             </div>
           </div>
         </div>
