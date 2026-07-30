@@ -19,8 +19,8 @@ const organizationSchemaData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'MegaWebCreations',
-  url: 'https://megawebcreations.com',
-  logo: 'https://megawebcreations.com/logo.jpg',
+  url: 'https://www.megawebcreations.com',
+  logo: 'https://www.megawebcreations.com/logo.jpg',
   description: 'We design custom websites, build AI automation systems, and implement SEO strategies to help small businesses generate more leads and increase revenue.',
   sameAs: [
     'https://www.facebook.com/megawebcreations',

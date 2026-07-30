@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Design System - MegaWebCreations',
     description: 'Comprehensive design system showcasing colors, components, and design tokens.',
-    url: 'https://megawebcreations.com/showcase',
+    url: 'https://www.megawebcreations.com/showcase',
     type: 'website',
     images: [
       {

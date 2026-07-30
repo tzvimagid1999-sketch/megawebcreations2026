@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Premium Web Design & AI Automation Services',
     description: 'Explore our services: custom websites, AI chatbots, SEO, automation, and business consulting for growing businesses.',
-    url: 'https://megawebcreations.com/services',
+    url: 'https://www.megawebcreations.com/services',
     type: 'website',
     images: [
       {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Custom websites, AI chatbots, SEO optimization, automation systems.',
   },
   alternates: {
-    canonical: 'https://megawebcreations.com/services',
+    canonical: 'https://www.megawebcreations.com/services',
   },
 }
 

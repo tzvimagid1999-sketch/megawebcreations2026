@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Privacy Policy - MegaWebCreations',
     description: 'We take your privacy seriously.',
-    url: 'https://megawebcreations.com/privacy',
+    url: 'https://www.megawebcreations.com/privacy',
     type: 'website',
   },
   robots: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://megawebcreations.com/privacy',
+    canonical: 'https://www.megawebcreations.com/privacy',
   },
 }
 

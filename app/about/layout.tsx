@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About MegaWebCreations',
     description: 'Obsessed with your revenue. 150+ businesses, $2.3M generated.',
-    url: 'https://megawebcreations.com/about',
+    url: 'https://www.megawebcreations.com/about',
     type: 'website',
     images: [
       {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Obsessed with your revenue. 150+ businesses helped.',
   },
   alternates: {
-    canonical: 'https://megawebcreations.com/about',
+    canonical: 'https://www.megawebcreations.com/about',
   },
 }
 

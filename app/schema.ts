@@ -4,8 +4,8 @@ export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'MegaWebCreations',
-  url: 'https://megawebcreations.com',
-  logo: 'https://megawebcreations.com/logo.jpg',
+  url: 'https://www.megawebcreations.com',
+  logo: 'https://www.megawebcreations.com/logo.jpg',
   description: 'We design custom websites, build AI automation systems, and implement SEO strategies to help small businesses generate more leads and increase revenue.',
   sameAs: [
     'https://www.facebook.com/megawebcreations',
@@ -31,9 +31,9 @@ export const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'MegaWebCreations',
-  image: 'https://megawebcreations.com/logo.jpg',
+  image: 'https://www.megawebcreations.com/logo.jpg',
   description: 'Custom website design and AI automation services for small businesses',
-  url: 'https://megawebcreations.com',
+  url: 'https://www.megawebcreations.com',
   telephone: '347-782-8453',
   email: 'Megwebcraetions@gmail.com',
   priceRange: '$1000-$25000',
@@ -52,7 +52,7 @@ export const serviceSchema = (name: string, description: string, priceFrom: numb
   provider: {
     '@type': 'Organization',
     name: 'MegaWebCreations',
-    url: 'https://megawebcreations.com',
+    url: 'https://www.megawebcreations.com',
   },
   offers: {
     '@type': 'Offer',

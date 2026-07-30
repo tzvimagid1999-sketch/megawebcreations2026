@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Custom Websites & AI Automation for Small Business | MegaWebCreations',
   description: 'We design conversion-focused websites, build AI automation systems, and implement SEO strategies. Help your business generate more leads, save time, and increase revenue.',
   keywords: 'web design, custom website, AI automation, chatbots, email automation, SEO optimization, lead generation, small business marketing',
-  metadataBase: new URL('https://megawebcreations.com'),
+  metadataBase: new URL('https://www.megawebcreations.com'),
   robots: {
     index: true,
     follow: true,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Custom Websites & AI Automation for Small Business',
     description: 'We design conversion-focused websites, build AI automation systems, and implement SEO strategies. Help your business generate more leads, save time, and increase revenue.',
-    url: 'https://megawebcreations.com',
+    url: 'https://www.megawebcreations.com',
     type: 'website',
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: 'We design conversion-focused websites and build AI automation systems to help your business grow.',
   },
   alternates: {
-    canonical: 'https://megawebcreations.com',
+    canonical: 'https://www.megawebcreations.com',
   },
 }
 
