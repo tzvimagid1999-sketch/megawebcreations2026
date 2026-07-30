@@ -23,7 +23,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-2xl font-bold text-text-primary mt-2xl mb-lg">1. Introduction</h2>
             <p className="text-text-secondary mb-lg leading-relaxed">
-              MegaWebCreations ("we", "us", "our") operates the megawebcreations.vercel.app website ("Service"). We are committed to protecting your privacy. This Privacy Policy explains our practices and your rights regarding your personal data.
+              MegaWebCreations ("we", "us", "our") operates the megawebcreations.com website ("Service"). We are committed to protecting your privacy. This Privacy Policy explains our practices and your rights regarding your personal data.
             </p>
 
             <h2 className="text-2xl font-bold text-text-primary mt-2xl mb-lg">2. Information We Collect</h2>

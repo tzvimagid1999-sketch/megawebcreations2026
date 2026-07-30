@@ -19,8 +19,8 @@ const organizationSchemaData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'MegaWebCreations',
-  url: 'https://megawebcreations.vercel.app',
-  logo: 'https://megawebcreations.vercel.app/logo.jpg',
+  url: 'https://megawebcreations.com',
+  logo: 'https://megawebcreations.com/logo.jpg',
   description: 'We design custom websites, build AI automation systems, and implement SEO strategies to help small businesses generate more leads and increase revenue.',
   sameAs: [
     'https://www.facebook.com/megawebcreations',
