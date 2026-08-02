@@ -7,8 +7,6 @@ import ConversionHeroNew from '@/components/conversion/ConversionHeroNew'
 import ServicesSection from '@/components/conversion/ServicesSection'
 import WhyChooseUs from '@/components/conversion/WhyChooseUs'
 import PremiumProcessSection from '@/components/conversion/PremiumProcessSection'
-import FeaturedProjects from '@/components/conversion/FeaturedProjects'
-import TestimonialsSection from '@/components/conversion/TestimonialsSection'
 import FAQSection from '@/components/conversion/FAQSection'
 import FinalCTA from '@/components/conversion/FinalCTA'
 import Footer from '@/components/Footer'
@@ -21,7 +19,7 @@ const organizationSchemaData = {
   name: 'MegaWebCreations',
   url: 'https://www.megawebcreations.com',
   logo: 'https://www.megawebcreations.com/logo.jpg',
-  description: 'We design custom websites, build AI automation systems, and implement SEO strategies to help small businesses generate more leads and increase revenue.',
+  description: 'We help small businesses get found on Google with SEO, local SEO, and conversion-focused websites that turn searches into customers.',
   sameAs: [
     'https://www.facebook.com/megawebcreations',
     'https://www.linkedin.com/company/megawebcreations',
@@ -99,8 +97,6 @@ export default function Home() {
         <ServicesSection onCTA={() => setShowContactModal(true)} />
         <WhyChooseUs onCTA={() => setShowContactModal(true)} />
         <PremiumProcessSection onCTA={() => setShowContactModal(true)} />
-        <FeaturedProjects />
-        <TestimonialsSection onCTA={() => setShowContactModal(true)} />
         <FAQSection onCTA={() => setShowContactModal(true)} />
         <FinalCTA onCTA={() => setShowContactModal(true)} />
         <Footer onContactClick={() => setShowContactModal(true)} />

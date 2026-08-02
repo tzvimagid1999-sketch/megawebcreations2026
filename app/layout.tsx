@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Custom Websites & AI Automation for Small Business | MegaWebCreations',
-  description: 'We design conversion-focused websites, build AI automation systems, and implement SEO strategies. Help your business generate more leads, save time, and increase revenue.',
-  keywords: 'web design, custom website, AI automation, chatbots, email automation, SEO optimization, lead generation, small business marketing',
+  title: 'SEO & Web Design for Small Business | Get Found on Google | MegaWebCreations',
+  description: 'We help small businesses get found on Google. SEO, local SEO, and conversion-focused websites that turn searches into customers—no long-term contracts.',
+  keywords: 'SEO for small business, local SEO, search engine optimization, Google Business Profile, small business web design, get found on Google, SEO services',
   metadataBase: new URL('https://www.megawebcreations.com'),
   robots: {
     index: true,
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Custom Websites & AI Automation for Small Business',
-    description: 'We design conversion-focused websites, build AI automation systems, and implement SEO strategies. Help your business generate more leads, save time, and increase revenue.',
+    title: 'SEO & Web Design for Small Business | Get Found on Google',
+    description: 'We help small businesses get found on Google. SEO, local SEO, and conversion-focused websites that turn searches into customers.',
     url: 'https://www.megawebcreations.com',
     type: 'website',
     images: [
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'MegaWebCreations - Web Design & AI Automation',
+        alt: 'MegaWebCreations - SEO & Web Design',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Websites & AI Automation for Small Business',
-    description: 'We design conversion-focused websites and build AI automation systems to help your business grow.',
+    title: 'SEO & Web Design for Small Business | Get Found on Google',
+    description: 'We help small businesses get found on Google—with SEO and websites that turn searches into customers.',
   },
   alternates: {
     canonical: 'https://www.megawebcreations.com',

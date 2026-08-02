@@ -30,9 +30,9 @@ export default function WhyChooseUs({ onCTA }: WhyChooseUsProps) {
         "We don't hand you a website and disappear. We actively optimize and support your digital assets so they keep generating revenue.",
     },
     {
-      title: 'Proven Track Record',
+      title: 'Honest, Measurable Work',
       description:
-        "Our clients see an average 40% revenue increase in year one. That's not a coincidence—it's our process.",
+        "We report real numbers from Google Search Console—what's ranking, what's growing—so you always see exactly what you're paying for.",
     },
   ]
 
