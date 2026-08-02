@@ -33,12 +33,12 @@ export default function Header({ onContactClick }: HeaderProps) {
           <a href="#results" className="text-text-secondary hover:text-accent bg-accent/5 hover:bg-accent/10 px-4 py-2 rounded-lg transition-all duration-base">
             Results
           </a>
-          <button
-            onClick={onContactClick}
-            className="px-6 py-2 bg-accent text-white font-semibold rounded hover:shadow-glow-lg transition-all duration-base transform hover:scale-110 active:scale-95 will-change-transform"
+          <a
+            href="/get-started"
+            className="px-6 py-2 bg-accent text-white font-semibold rounded hover:shadow-glow-lg transition-all duration-base transform hover:scale-110 active:scale-95 will-change-transform inline-block"
           >
             Start Project
-          </button>
+          </a>
         </nav>
 
         <button
@@ -60,12 +60,12 @@ export default function Header({ onContactClick }: HeaderProps) {
             <a href="#why-us" className="text-text-secondary hover:text-accent transition-colors duration-base">Why Us</a>
             <a href="#how-it-works" className="text-text-secondary hover:text-accent transition-colors duration-base">How It Works</a>
             <a href="#results" className="text-text-secondary hover:text-accent transition-colors duration-base">Results</a>
-            <button
-              onClick={onContactClick}
-              className="w-full px-6 py-2 bg-accent text-white font-semibold rounded hover:shadow-glow-lg transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform"
+            <a
+              href="/get-started"
+              className="w-full text-center px-6 py-2 bg-accent text-white font-semibold rounded hover:shadow-glow-lg transition-all duration-base transform hover:scale-105 active:scale-95 will-change-transform inline-block"
             >
               Start Project
-            </button>
+            </a>
           </nav>
         </div>
       )}
