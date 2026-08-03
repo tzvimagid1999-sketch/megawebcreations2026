@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Premium Web Design & AI Automation Services | MegaWebCreations',
-  description: 'Custom websites, AI chatbots, SEO optimization, automation systems, and business consulting. Detailed service breakdown with pricing, timelines, and ROI expectations.',
-  keywords: 'web design services, AI automation, chatbots, email automation, SEO services, CRM automation, lead capture, workflow automation, business automation',
+  title: 'SEO & Web Design Services | MegaWebCreations',
+  description: 'SEO, local SEO, and conversion-focused web design for small businesses. Detailed service breakdown with timelines and what to expect.',
+  keywords: 'SEO services, local SEO, search engine optimization, small business web design, Google Business Profile, get found on Google',
   openGraph: {
-    title: 'Premium Web Design & AI Automation Services',
-    description: 'Explore our services: custom websites, AI chatbots, SEO, automation, and business consulting for growing businesses.',
+    title: 'SEO & Web Design Services',
+    description: 'SEO, local SEO, and conversion-focused web design for small businesses.',
     url: 'https://www.megawebcreations.com/services',
     type: 'website',
     images: [

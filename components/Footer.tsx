@@ -15,16 +15,16 @@ export default function Footer({ onContactClick }: FooterProps) {
               <span className="font-bold text-white">MegaWebCreations</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Premium web design, AI automation, and SEO strategies for businesses that want to grow online.
+              SEO, local SEO, and conversion-focused web design that help small businesses get found on Google.
             </p>
           </div>
 
           <div>
             <h4 className="font-bold text-white mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-gray-400 hover:text-accent transition text-sm">Web Design</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-accent transition text-sm">AI Automation</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-accent transition text-sm">SEO Strategy</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-accent transition text-sm">SEO</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-accent transition text-sm">Local SEO</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-accent transition text-sm">Web Design</a></li>
             </ul>
           </div>
 

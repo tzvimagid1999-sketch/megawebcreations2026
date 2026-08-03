@@ -55,11 +55,11 @@ export default function ServiceComparison() {
               </li>
               <li className="flex gap-md">
                 <span className="text-accent flex-shrink-0">✓</span>
-                <span className="text-text-secondary">Lead Capture + Email Automation</span>
+                <span className="text-text-secondary">Local SEO + Google Business Profile</span>
               </li>
               <li className="flex gap-md">
                 <span className="text-accent flex-shrink-0">✓</span>
-                <span className="text-text-secondary">AI Chatbot for Support</span>
+                <span className="text-text-secondary">Monthly Content + Reporting</span>
               </li>
             </ul>
             <button className="w-full px-lg py-md bg-accent text-inverse font-semibold rounded-md hover:shadow-glow-md transition-all duration-fast">
@@ -82,7 +82,7 @@ export default function ServiceComparison() {
               </li>
               <li className="flex gap-md">
                 <span className="text-accent flex-shrink-0">✓</span>
-                <span className="text-text-secondary">Custom Workflows & Automation</span>
+                <span className="text-text-secondary">Ongoing Content & Link Building</span>
               </li>
               <li className="flex gap-md">
                 <span className="text-accent flex-shrink-0">✓</span>
@@ -103,18 +103,18 @@ export default function ServiceComparison() {
               <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-md">Start Here</p>
               <ul className="space-y-sm text-text-secondary">
                 <li>✓ Website not generating leads → Website Design</li>
-                <li>✓ Can't handle inquiries manually → AI Chatbot</li>
-                <li>✓ Not found in search results → SEO</li>
-                <li>✓ Manual tasks wasting time → Workflow Automation</li>
+                <li>✓ Not showing up on Google → SEO</li>
+                <li>✓ Invisible in local search → Local SEO</li>
+                <li>✓ Losing customers to competitors → SEO + Website</li>
               </ul>
             </div>
             <div>
               <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-md">Scale These</p>
               <ul className="space-y-sm text-text-secondary">
-                <li>✓ Website + SEO together = 5x results</li>
-                <li>✓ Chatbot + CRM = every lead tracked</li>
-                <li>✓ Email + Lead Capture = passive revenue</li>
-                <li>✓ All services = revenue on autopilot</li>
+                <li>✓ Website + SEO = found and converting</li>
+                <li>✓ Local SEO + reviews = more nearby customers</li>
+                <li>✓ Content + SEO = traffic that compounds</li>
+                <li>✓ Website + SEO + Local = full online presence</li>
               </ul>
             </div>
           </div>
